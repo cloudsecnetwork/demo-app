@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/cloudsecnetwork/demo-app.git'
+                git branch: 'main', url: 'https://github.com/cloudsecnetwork/demo-app.git'
             }
         }
         stage('Code Analysis') {
